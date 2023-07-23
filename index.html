@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="input-container">
+				<input
+					id="inputValue"
+					type="text"
+					class="search-filed"
+					placeholder="Enter City Name" />
+				<button id="inputBtn" class="search-btn">
+					<img
+						src=" https://res.cloudinary.com/dnmaskg3n/image/upload/v1690093521/search_duorts.png"
+						alt="search-icon"
+						class="search-icon" />
+				</button>
+			</div>
+			<h1 id="error" class="error"></h1>
+			<div class="current-weather">
+				<div class="current-weather-content">
+					<img
+						id="weatherIcon"
+						src="https://res.cloudinary.com/dnmaskg3n/image/upload/v1690093522/mist_m9uvnq.png"
+						class="weather-img" />
+					<h1 id="temp" class="wather-temp">28°C</h1>
+					<p id="city" class="city-name">New York</p>
+				</div>
+				<div class="hum-wind-container">
+					<div class="flex">
+						<img
+							src="https://res.cloudinary.com/dnmaskg3n/image/upload/v1690093521/humidity_hwluad.png"
+							alt="wind"
+							class="wind-img" />
+						<div>
+							<span id="humidity">48%</span>
+							<p>Humidity</p>
+						</div>
+					</div>
+					<div class="flex">
+						<img
+							src="https://res.cloudinary.com/dnmaskg3n/image/upload/v1690093522/wind_ejhryb.png"
+							alt="wind"
+							class="wind-img" />
+						<div>
+							<span id="speed">10.29 Km/h</span>
+							<p>Speed</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>
